@@ -190,6 +190,9 @@
     .row{
        flex-direction: column;
     }
+     .nav{
+         left:-100%;
+     }
  }
  
  
