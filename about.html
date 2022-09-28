@@ -1,51 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1N6YDRLDMQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-1N6YDRLDMQ');
-</script>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coding Class</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <section class = "header"><link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-       <nav>
-        <a href="index.html"><img src="images/logo3.png"></a>
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Course</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo3.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- <i class='fa fa-times'></i> -->
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
 
-</head>
-     <section class="footer">
-        <h4>About us</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Delectus perferendis, molestias maxime
-            voluptatibus necessitatibus optio sed enim soluta sequi quasi.</p>
-        <div class="icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
 
-        </div>
+       <h1>About us</h1>
 
-        <p>Made with <i class="fa-solid fa-heart"></i> by Unknown</p>
-    </section>
+</section>
+        <!-- About us content -->
+ 
+   <section class="about-us">
+    <div class="row">
+    <div class="about-col">
+        <h1>Most viewed website in the world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, alias corporis. Harum eveniet expedita temporibus ducimus aspernatur suscipit quas earum neque ipsam reprehenderit cumque, dolore cupiditate voluptatum veritatis hic ipsum minima exercitationem excepturi ratione voluptas commodi. Fuga voluptatum nesciunt omnis!</p>
+       <a href=""    class="hero-btn red-btn" >EXPLORE NOW</a>
+    </div>
+    <div class="about-col">
+        <img src="images/about.jpg">
 
+
+    </div>
+    </div>
+
+
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ <!-- footer -->
+
+ <section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Delectus perferendis, molestias maxime voluptatibus necessitatibus optio sed enim soluta sequi quasi.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+         
+    </div>
+
+    <p>Made   <i class="fa-solid fa-heart"></i>  by SAM</p>
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- java script for toggle menu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 
 </body>
+
 </html>
